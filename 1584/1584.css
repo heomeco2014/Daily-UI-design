@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", monospace;
+}
+
+body {
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.5102415966) 0%, rgb(31, 107, 212) 29%, rgba(184, 0, 255, 0.2301295518) 88%);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.tag {
+  width: 663px;
+  padding: 32px;
+  background-color: #f1e2f5;
+  border-radius: 12px;
+  box-shadow: 0 0 0 12px #b57de2;
+  margin: 2rem;
+  position: absolute;
+}
+.tag:nth-child(1) {
+  left: 353px;
+  top: 175px;
+  z-index: 2;
+}
+.tag:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+.tag:nth-child(3) {
+  top: 50%;
+  transform: translate(50%, 0%);
+  z-index: 2;
+}
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags-container .single-tag {
+  display: flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 8px;
+  user-select: none;
+}
+.tags-container .single-tag:hover {
+  background: #b57de2;
+  color: #fff;
+}
+.tags-container .single-tag:not(:last-child) {
+  margin-right: 8px;
+}
+.tags-container .single-tag.active {
+  background: #7a3aad;
+  color: #fff;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  display: flex;
+  flex: 1 1 80%;
+  position: relative;
+}
+.search__input {
+  padding: 16px;
+  padding-left: 3rem;
+  width: 95%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+.search__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px;
+  border-radius: 12px;
+}
+
+.btn-search {
+  background-color: #1a2653;
+  color: white;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+.btn-search:hover {
+  background-color: #b57de2;
+  cursor: pointer;
+}
+.btn-search:active {
+  background-color: #7a3aad;
+  transform: scale(0.95);
+}
+
+.post {
+  width: fit-content;
+}
+.posts-container {
+  width: fit-content;
+}
+.post__title {
+  padding: 16px;
+  border-radius: 12px;
+}
+.post__title:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.post__title a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.white-card {
+  position: absolute;
+  width: 443px;
+  height: 651px;
+  left: 517px;
+  top: 273px;
+  background: #ffffff;
+  border-radius: 14px;
+}
