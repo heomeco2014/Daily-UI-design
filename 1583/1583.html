@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="1583.css" />
+		<title>1583 Daily UI Design</title>
+	</head>
+
+	<body>
+		<form class="password__container">
+			<h1 class="password__header">Enter your password</h1>
+			<div class="account">
+				<img
+					src="https://vcdn1-giaitri.vnecdn.net/2022/12/15/avatar-2-1-jpeg-2238-1671050566.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=Gjwi0rqvUSZXSzXx1YrqaA"
+					alt=""
+					class="account__avatar" />
+
+				<div class="account__info">
+					<p class="account__type">Business Account</p>
+					<h2 class="account__name">Sarah Bills</h2>
+				</div>
+			</div>
+			<div class="password__form">
+				<label for="password" class="password__label">Password</label>
+				<div class="password__input--container">
+          <i class="fa-solid fa-lock lock-icon"></i>
+					<input type="password" name="password" id="password" class="password__input" />
+					<button class="password__toggle">
+						<i class="fa-regular fa-eye see"></i>
+						<i class="fa-regular fa-eye-slash unsee active"></i>
+					</button>
+				</div>
+			</div>
+      <div class="stay-signed-in">
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        <label for="stay-signed-in" class="stay-signed-in__label">Stay signed in</label>
+        <button class="btn">Continue</button>
+      </div>
+      <a href="#" class="reset__password">Reset Password</a>
+		</form>
+    <script src="1583.js"></script>
+	</body>
+</html>
